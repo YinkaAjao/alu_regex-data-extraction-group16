@@ -37,12 +37,12 @@ currency_pattern = r'\$\d{1,3}(,\d{3})*(\.\d{2})?'
 html_tag= r'\^<[a-zA-z\s{20,}\d>]'
 
 # Extracting data
-#emails = re.findall(email_pattern, sample_text)
-#urls = re.findall(url_pattern, sample_text)
-#phones = re.findall(phone_pattern, sample_text)
-#credit_cards = re.findall(credit_card_pattern, sample_text)
-#times = re.findall(time_pattern, sample_text)
-#currencies = re.findall(currency_pattern, sample_text)
+emails = re.findall(email_pattern, sample_text)
+urls = re.findall(url_pattern, sample_text)
+phones = re.findall(phone_pattern, sample_text)
+credit_cards = re.findall(credit_card_pattern, sample_text)
+times = re.findall(time_pattern, sample_text)
+currencies = re.findall(currency_pattern, sample_text)
 
 #Printing data
 print("Emails:", emails)
