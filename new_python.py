@@ -1,19 +1,31 @@
-# import requests
-# import re
+import requests
+import re
 
-# url = "https://linkedin-data5.p.rapidapi.com/"
+# Fetching data from LinkedIn api - 
+url = "https://linkedin-data5.p.rapidapi.com/"
 
-# querystring = {"username":"satyanadella"}
+querystring = {"username":"satyanadella"}
 
-# headers = {
-# 	"x-rapidapi-key": "93e69d4612mshb9882c64196bebap186e1ajsn4e3c4ca3b804",
-# 	"x-rapidapi-host": "linkedin-data5.p.rapidapi.com"
-# }
+headers = {
+	"x-rapidapi-key": "93e69d4612mshb9882c64196bebap186e1ajsn4e3c4ca3b804",
+	"x-rapidapi-host": "linkedin-data5.p.rapidapi.com"
+}
 
-# response = requests.get(url, headers=headers, params=querystring)
-# # print(response.json())
+response = requests.get(url, headers=headers, params=querystring)
+# print(response.json())
 
-# sample_text =str(response.json())
+# Adding mock data to the sample_text
+mock_data = """
+    Emails: ['test1@example.com', 'contact@company.com', 'info@domain.org']
+    URLs: ['https://www.example.com', 'http://subdomain.example.org/page', 'https://sample.org']
+    Phone Numbers: ['(123) 456-7890', '123-456-7890', '123.456.7890']
+    Credit Cards: ['1234 5678 9012 3456', '1234-5678-9012-3456', '1234 5678 1234 9876']
+    Times: ['14:30', '2:30 PM', '23:59']
+    Currency: ['$19.99', '$1,234.56', '$500']
+"""
+
+# Combining LinkedIn response and mock data - this is because the linkedin data doesn't contain all the variables to check as the assignment request
+sample_text = str(response.json()) + mock_data
 
 # Regex patterns
 email_pattern = r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'
