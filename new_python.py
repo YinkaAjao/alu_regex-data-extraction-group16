@@ -44,7 +44,7 @@ credit_cards = re.findall(credit_card_pattern, sample_text)
 times = re.findall(time_pattern, sample_text)
 currencies = re.findall(currency_pattern, sample_text)
 
-#Printing data
+# Printing data
 print("Emails:", emails)
 print("URLs:", urls)
 print("Phone Numbers:", phones)
