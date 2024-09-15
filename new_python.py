@@ -19,10 +19,10 @@
 email_pattern = r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'
 url_pattern = r'https?:\/\/(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?'
 phone_pattern = r'(\(\d{3}\)\s|\d{3}[-.])?\d{3}[-.]\d{4}'
-# credit_card_pattern = r'(\d{4}[-\s]?){3}\d{4}'
-# time_pattern = r'(?:[01]?\d|2[0-3]):[0-5]\d(?:\s?[APap][Mm])?'
-# currency_pattern = r'\$\d{1,3}(,\d{3})*(\.\d{2})?'
-# html_tag= r'\^<[a-zA-z\s{20,}\d>]'
+credit_card_pattern = r'(\d{4}[-\s]?){3}\d{4}'
+time_pattern = r'(?:[01]?\d|2[0-3]):[0-5]\d(?:\s?[APap][Mm])?'
+currency_pattern = r'\$\d{1,3}(,\d{3})*(\.\d{2})?'
+html_tag= r'\^<[a-zA-z\s{20,}\d>]'
 
 # Extracting data
 # emails = re.findall(email_pattern, sample_text)
