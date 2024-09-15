@@ -44,9 +44,10 @@ html_tag= r'\^<[a-zA-z\s{20,}\d>]'
 # times = re.findall(time_pattern, sample_text)
 # currencies = re.findall(currency_pattern, sample_text)
 
-# print("Emails:", emails)
-# print("URLs:", urls)
-# print("Phone Numbers:", phones)
-# print("Credit Cards:", credit_cards)
-# print("Times:", times)
-# # print("Currency:", currencies)
+#Printing data
+print("Emails:", emails)
+print("URLs:", urls)
+print("Phone Numbers:", phones)
+print("Credit Cards:", credit_cards)
+print("Times:", times)
+print("Currency:", currencies)
