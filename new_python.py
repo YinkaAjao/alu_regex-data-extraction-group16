@@ -45,9 +45,11 @@ times = re.findall(time_pattern, sample_text)
 currencies = re.findall(currency_pattern, sample_text)
 
 # Printing data
+print("-"*20)
 print("Emails:", emails)
 print("URLs:", urls)
 print("Phone Numbers:", phones)
 print("Credit Cards:", credit_cards)
 print("Times:", times)
 print("Currency:", currencies)
+print("-"*20)
